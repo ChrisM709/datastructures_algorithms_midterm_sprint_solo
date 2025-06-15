@@ -1,0 +1,9 @@
+created the project structure to get a basic setup and plan how I will approach this project.  
+pushed the initial structure to GitHub.
+
+--------------------------------------------------
+
+built a menu placeholder in Main.java to map out the project flow.  
+set maxUsers = 10 to keep the scope small; userCount starts at 0, so we begin with no users.  
+used a Scanner for menu input and a boolean flag to shut down the program when “Exit” is chosen.  
+added an “Invalid option” message for wrong inputs and left private methods at the bottom as placeholders for each feature.  

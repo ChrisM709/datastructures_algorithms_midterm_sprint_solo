@@ -1,17 +1,56 @@
 package com.todolistmanager;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-public class Main {
-    public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+import java.util.Scanner;
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
+public class Main {
+    private static User[] users = new User[10];
+    private static int userCount = 0;
+    private static Scanner in = new Scanner(System.in);
+
+    public static void main(String[] args) throws InterruptedException {
+        boolean running = true;
+        while (running) {
+            System.out.println("\n╔══════════════════════════╗");
+            System.out.println("║    To-Do List Manager    ║");
+            System.out.println("╚══════════════════════════╝");
+            System.out.println();
+            System.out.println("1. Create a new user");
+            System.out.println("2. Add task to a user");
+            System.out.println("3. Mark a task completed");
+            System.out.println("4. View a user’s tasks");
+            System.out.println("5. Exit");
+            System.out.println();
+            System.out.print("Please choose an option: ");
+
+            int choice = Integer.parseInt(in.nextLine());
+            switch (choice) {
+                case 1 -> createUser();
+                case 2 -> addTaskToUser();
+                case 3 -> markTaskCompleted();
+                case 4 -> viewUserTasks();
+                case 5 -> {
+                    running = false;
+                    System.out.println("Goodbye!");
+                }
+                default -> System.out.println("Invalid option.");
+            }
         }
+        in.close();
+    }
+
+    private static void createUser() {
+        // Placeholder
+    }
+
+    private static void addTaskToUser() {
+        // Placeholder
+    }
+
+    private static void markTaskCompleted() {
+        // Placeholder
+    }
+
+    private static void viewUserTasks() {
+        // Placeholder
     }
 }
