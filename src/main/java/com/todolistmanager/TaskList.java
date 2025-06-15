@@ -1,5 +1,5 @@
 package com.todolistmanager;
 
-public class TodoList {
+public class TaskList {
     
 }
