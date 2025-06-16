@@ -31,3 +31,12 @@ added getName() to retrieve the user’s name.
 added addTask(String description) to create and add a new Task.
 added markTaskCompleted(int index) to mark a specific task as completed.
 added printTasks() to display all current tasks for that user.
+
+------------------------------------------------
+
+after I finished the User.java I think my next thing to do would be to complete my main functions
+completed the createUser() class I had a place holder for in the Main.java
+it accepts a username and removes the extra spaces at the end 
+looks through existing users to see if there are any matches
+if it matches return, if not create a new user
+print line to confirm creation
