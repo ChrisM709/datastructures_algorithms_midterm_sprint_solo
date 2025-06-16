@@ -1,5 +1,7 @@
 # To-Do List Manager
 
+*I keep a running log of my project thoughts and design decisions in `notes.txt`.*
+
 A simple Java console application that lets multiple users maintain their own to-do lists.  
 Each user's tasks are stored in a single linked list.
 
