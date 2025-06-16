@@ -75,6 +75,19 @@ public class Main {
     }
 
     private static void viewUserTasks() {
-        // Placeholder
+        if (userCount == 0) {
+            System.out.println("\nThere are no users currently registered, please add a user and come back once a task has been assigned to them.");
+            return;
+        }
+
+        System.out.println("\nSelect a user by number to view their current task list:");
+        for (int i = 0; i < userCount; i++) {
+            System.out.println(i + ": " + users[i].getName());
+        }
+        System.out.print("Enter user number: ");
+
+        int userIndex = Integer.parseInt(in.nextLine());
+
+        users[userIndex].printTasks();
     }
 }

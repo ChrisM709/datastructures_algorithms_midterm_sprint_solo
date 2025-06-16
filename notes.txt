@@ -48,3 +48,16 @@ listed current users with their indices so you can pick one.
 prompted for and read the selected user number.  
 prompted for a task description and trimmed extra spaces.  
 called users[userIndex].addTask(desc) to add the new Task to the chosen user’s TaskList. 
+
+------------------------------------------------
+
+implemented TaskList.printTasks() in TaskList.java would come next as I will need to show the tasks when a user tries to print them in the Main.java
+checks if the list is empty and prints “No tasks to show.”  
+iterates from head through each node, printing the task index and Task.toString()  
+
+------------------------------------------------
+
+added viewUserTasks() in Main.java:  
+ensures at least one user exists before proceeding  
+lists all users with their indices and prompts for a selection  
+parses the chosen index and calls users[userIndex].printTasks() to display that user’s tasks
