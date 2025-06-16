@@ -14,3 +14,11 @@ created the TaskList class next because users need to be able to add tasks to a 
 defined a private Node inner class that holds a Task and a reference to the next node. head points to the first node (or is null if empty) and size keeps track of how many tasks are in the list.
 in addTask(), wrapped the new Task in a Node. if the list is empty, that node becomes head; otherwise traversed to the end and linked the new node there. after inserting, incremented size.
 left placeholders for markCompleted(int position) and printTasks() to handle marking tasks done and printing them in order, and included getSize() so other parts of the program can easily check how many tasks are stored.
+
+------------------------------------------------
+
+this morning I implemented the Task class because both TaskList and User that I created last night depends on it, this seemed like the next best step so I did the following
+created a constructor that takes a description and initializes completed to false for later changing if a task is done or not
+added markCompleted() to update the task status once done, plus getters for description and isCompleted().
+overrode toString() so printing a task shows “[ ] Description” or “[x] Description” based on its state.
+can tweak the formatting later if I want a different look.
