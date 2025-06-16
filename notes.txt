@@ -40,3 +40,11 @@ it accepts a username and removes the extra spaces at the end
 looks through existing users to see if there are any matches
 if it matches return, if not create a new user
 print line to confirm creation
+
+------------------------------------------------
+
+implemented the addTaskToUser() method in Main.java to let a user add tasks.  
+listed current users with their indices so you can pick one.  
+prompted for and read the selected user number.  
+prompted for a task description and trimmed extra spaces.  
+called users[userIndex].addTask(desc) to add the new Task to the chosen user’s TaskList. 

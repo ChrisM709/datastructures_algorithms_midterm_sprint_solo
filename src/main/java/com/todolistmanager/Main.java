@@ -50,14 +50,24 @@ public class Main {
                 return;
             }
         }
-        
+
         users[userCount++] = new User(name);
         System.out.println();
         System.out.println("User \"" + name + "\" created. Total users: " + userCount);
     }
 
     private static void addTaskToUser() {
-        // Placeholder
+        System.out.println("\nSelect a user by number:");
+        for (int i = 0; i < userCount; i++) {
+            System.out.println(i + ": " + users[i].getName());
+        }
+        System.out.print("Enter user number: ");
+        int userIndex = Integer.parseInt(in.nextLine());
+
+        System.out.print("Enter task description: ");
+        String desc = in.nextLine().trim();
+
+        users[userIndex].addTask(desc);
     }
 
     private static void markTaskCompleted() {
