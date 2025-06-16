@@ -22,3 +22,12 @@ created a constructor that takes a description and initializes completed to fals
 added markCompleted() to update the task status once done, plus getters for description and isCompleted().
 overrode toString() so printing a task shows “[ ] Description” or “[x] Description” based on its state.
 can tweak the formatting later if I want a different look.
+
+------------------------------------------------
+
+created the User class next because I needed a way to tie a username to its TaskList.
+defined a constructor that takes the user’s name and initializes a new TaskList.
+added getName() to retrieve the user’s name.
+added addTask(String description) to create and add a new Task.
+added markTaskCompleted(int index) to mark a specific task as completed.
+added printTasks() to display all current tasks for that user.
