@@ -39,17 +39,20 @@ public class Main {
     }
 
     private static void createUser() {
+        System.out.println();
         System.out.print("Please enter username: ");
         String name = in.nextLine().trim();
 
         for (int i = 0; i < userCount; i++) {
             if (users[i].getName().equalsIgnoreCase(name)) {
+                System.out.println();
                 System.out.println("User \"" + name + "\" already exists.");
                 return;
             }
         }
         
         users[userCount++] = new User(name);
+        System.out.println();
         System.out.println("User \"" + name + "\" created. Total users: " + userCount);
     }
 
