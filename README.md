@@ -1,0 +1,33 @@
+# To-Do List Manager
+
+A simple Java console application that lets multiple users maintain their own to-do lists.  
+Each user's tasks are stored in a single linked list.
+
+## Features
+
+- Create up to 10 users, each with a unique name  
+- Add tasks with descriptions  
+- Mark tasks as completed  
+- View all tasks for any user  
+
+## Project Structure
+
+```
+src/
+  main/java/com/todolistmanager/
+    ├── Main.java       # Entry point and menu  
+    ├── Task.java       # Task model (description + status)  
+    ├── TaskList.java   # Single linked list for tasks  
+    └── User.java       # User model (name + todo list)  
+pom.xml               # Maven build file  
+.gitignore            # Files to ignore in Git  
+README.md             # Project documentation  
+```
+
+## Usage
+
+1. Choose **Create a new user** to add someone.  
+2. Use **Add task to a user** to insert a task.  
+3. **Mark a task completed** to toggle its status.  
+4. **View a user’s tasks** to see their list and statuses.  
+5. **Exit** to close the program.
