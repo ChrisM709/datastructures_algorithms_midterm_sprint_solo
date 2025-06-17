@@ -28,7 +28,12 @@ public class TaskList {
     }
 
     public void markCompleted(int position) {
-        // TODO: start at head, move `position` times, then call task.markCompleted()
+        Node curr = head;
+        for (int i = 0; i < position; i++) {
+            curr = curr.next;
+        }
+        curr.task.markCompleted();
+        System.out.println("Task " + position + " marked as completed.");
     }
 
     public void printTasks() {

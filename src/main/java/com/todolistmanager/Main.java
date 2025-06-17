@@ -71,12 +71,26 @@ public class Main {
     }
 
     private static void markTaskCompleted() {
-        // Placeholder
+        System.out.println("\nSelect a user by number to mark a task completed by them:");
+        for (int i = 0; i < userCount; i++) {
+            System.out.println(i + ": " + users[i].getName());
+        }
+        System.out.print("Enter user number: ");
+        int userIndex = Integer.parseInt(in.nextLine());
+
+        System.out.println("\nTasks for " + users[userIndex].getName() + ":");
+        users[userIndex].printTasks();
+
+        System.out.print("Enter task number to mark as completed: ");
+        int taskIndex = Integer.parseInt(in.nextLine());
+
+        users[userIndex].markTaskCompleted(taskIndex);
     }
 
     private static void viewUserTasks() {
         if (userCount == 0) {
-            System.out.println("\nThere are no users currently registered, please add a user and come back once a task has been assigned to them.");
+            System.out.println(
+                    "\nThere are no users currently registered, please add a user and come back once a task has been assigned to them.");
             return;
         }
 

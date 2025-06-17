@@ -61,3 +61,17 @@ added viewUserTasks() in Main.java:
 ensures at least one user exists before proceeding  
 lists all users with their indices and prompts for a selection  
 parses the chosen index and calls users[userIndex].printTasks() to display that user’s tasks
+
+------------------------------------------------
+
+implemented markCompleted(int position) in TaskList.java:
+traversed from head through the list to reach the target node, then called task.markCompleted().  
+printed a confirmation that the task was marked as completed.
+
+------------------------------------------------
+
+added markTaskCompleted() in Main.java:   
+listed all users with indices and prompted for a user number.  
+displayed the selected user’s tasks.  
+prompted for which task number to mark completed and read the input.  
+called users[userIndex].markTaskCompleted(taskIndex) to update the task status.
