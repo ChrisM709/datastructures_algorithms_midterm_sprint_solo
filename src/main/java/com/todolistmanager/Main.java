@@ -58,9 +58,11 @@ public class Main {
 
     private static void addTaskToUser() {
         System.out.println("\nSelect a user by number:");
+        System.out.println();
         for (int i = 0; i < userCount; i++) {
             System.out.println(i + ": " + users[i].getName());
         }
+        System.out.println();
         System.out.print("Enter user number: ");
         int userIndex = Integer.parseInt(in.nextLine());
 
@@ -72,15 +74,18 @@ public class Main {
 
     private static void markTaskCompleted() {
         System.out.println("\nSelect a user by number to mark a task completed by them:");
+        System.out.println();
         for (int i = 0; i < userCount; i++) {
             System.out.println(i + ": " + users[i].getName());
         }
+        System.out.println();
         System.out.print("Enter user number: ");
         int userIndex = Integer.parseInt(in.nextLine());
 
         System.out.println("\nTasks for " + users[userIndex].getName() + ":");
         users[userIndex].printTasks();
 
+        System.out.println();
         System.out.print("Enter task number to mark as completed: ");
         int taskIndex = Integer.parseInt(in.nextLine());
 
@@ -95,9 +100,11 @@ public class Main {
         }
 
         System.out.println("\nSelect a user by number to view their current task list:");
+        System.out.println();
         for (int i = 0; i < userCount; i++) {
             System.out.println(i + ": " + users[i].getName());
         }
+        System.out.println();
         System.out.print("Enter user number: ");
 
         int userIndex = Integer.parseInt(in.nextLine());
