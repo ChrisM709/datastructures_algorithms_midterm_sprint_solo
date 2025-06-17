@@ -1,3 +1,4 @@
+
 # To-Do List Manager
 
 *I keep a running log of my project thoughts and design decisions in `notes.txt`.*
@@ -11,6 +12,17 @@ Each user's tasks are stored in a single linked list.
 - Add tasks with descriptions  
 - Mark tasks as completed  
 - View all tasks for any user  
+
+## Prerequisites
+
+- Java JDK 11 or higher  
+- Maven 3.6+
+
+
+## Configuration
+
+- The system supports up to 10 users by default.  
+- To change this, edit the `users` array size in `Main.java`.
 
 ## Project Structure
 
@@ -33,3 +45,22 @@ README.md             # Project documentation
 3. **Mark a task completed** to toggle its status.  
 4. **View a user’s tasks** to see their list and statuses.  
 5. **Exit** to close the program.
+
+
+## Sample Usage
+
+```
+1. Create a new user
+Enter username: Alice
+User "Alice" created. Total users: 1
+
+2. Add task to a user
+Select user 0: Alice
+Enter task description: Buy milk
+Added task for Alice: Buy milk
+
+4. View a user’s tasks
+Select user 0: Alice
+Tasks for Alice:
+0: [ ] Buy milk
+```
