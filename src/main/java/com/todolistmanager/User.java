@@ -15,16 +15,19 @@ public class User {
 
     public void addTask(String description) {
         tasks.addTask(new Task(description));
+        System.out.println();
         System.out.println("Added task for " + name + ": " + description);
     }
 
     public void markTaskCompleted(int index) {
+        System.out.println();
         System.out.println("Marking task " + index + " for " + name);
         tasks.markCompleted(index);
     }
 
     public void printTasks() {
-        System.out.println("\nCurrent tasks for " + name + ":");
+        System.out.println("\nCurrent tasks:");
+        System.out.println();
         tasks.printTasks();
     }
 }
