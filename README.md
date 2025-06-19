@@ -64,3 +64,9 @@ Select user 0: Alice
 Tasks for Alice:
 0: [ ] Buy milk
 ```
+## Testing
+
+We use JUnit 5 to cover core functionality in:
+
+- `src/test/java/com/todolistmanager/TaskTest.java`  
+- `src/test/java/com/todolistmanager/TaskListTest.java`  
