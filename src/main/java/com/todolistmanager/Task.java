@@ -10,7 +10,7 @@ public class Task {
     }
 
     public void markCompleted() {
-        this.completed = true;
+        this.completed = !this.completed;
     }
 
     public String getDescription() {

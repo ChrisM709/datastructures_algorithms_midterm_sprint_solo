@@ -17,7 +17,7 @@ public class Main {
             System.out.println("1. Create a new user");
             System.out.println("2. Add task to a user");
             System.out.println("3. Mark a task completed");
-            System.out.println("4. View a user’s tasks");
+            System.out.println("4. View a user's tasks");
             System.out.println("5. Exit");
             System.out.println();
             System.out.print("Please choose an option: ");
