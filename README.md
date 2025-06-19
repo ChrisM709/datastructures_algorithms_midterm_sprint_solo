@@ -66,7 +66,7 @@ Tasks for Alice:
 ```
 ## Testing
 
-We use JUnit 5 to cover core functionality in:
+Used JUnit 5 to cover core functionality in:
 
 - `src/test/java/com/todolistmanager/TaskTest.java`  
 - `src/test/java/com/todolistmanager/TaskListTest.java`  
