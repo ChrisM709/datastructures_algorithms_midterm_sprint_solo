@@ -39,6 +39,11 @@ public class Main {
     }
 
     private static void createUser() {
+        if (userCount >= users.length) {
+            System.out.println("\nCannot create more than " + users.length + " users.");
+            return;
+        }
+
         System.out.println();
         System.out.print("Please enter username: ");
         String name = in.nextLine().trim();
@@ -57,6 +62,11 @@ public class Main {
     }
 
     private static void addTaskToUser() {
+        if (userCount == 0) {
+            System.out.println("\nNo users have been created yet. Please add a user first.");
+            return;
+        }
+
         System.out.println("\nSelect a user by number:");
         System.out.println();
         for (int i = 0; i < userCount; i++) {
@@ -68,6 +78,11 @@ public class Main {
 
         System.out.print("Enter task description: ");
         String desc = in.nextLine().trim();
+        if (desc.isBlank()) {
+            System.out.println();
+            System.out.println("Cannot add an empty task.");
+            return;
+        }
 
         users[userIndex].addTask(desc);
     }
