@@ -82,3 +82,7 @@ Added testing files on last commit now adding error handing
 In Main, Made it so it throws en error if they try to make more users then specified 
 if a user tries to add a task to a user and none are created yet, it returns to the menu with the message 'No users have been created yet. Please add a user first.'
 if a user tries to add a blank task to a user it tells you it cannot be blank
+
+------------------------------------------------
+
+more error handing so that when a user tries to enter a blank username is returns with an error message that is cannot be blank

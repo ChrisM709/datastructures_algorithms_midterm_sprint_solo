@@ -48,6 +48,12 @@ public class Main {
         System.out.print("Please enter username: ");
         String name = in.nextLine().trim();
 
+        if (name.isBlank()) {
+            System.out.println();
+            System.out.println("Username cannot be blank.");
+            return;
+        }
+
         for (int i = 0; i < userCount; i++) {
             if (users[i].getName().equalsIgnoreCase(name)) {
                 System.out.println();
